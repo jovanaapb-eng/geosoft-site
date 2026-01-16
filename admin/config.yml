@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+site_url: "https://your-site.netlify.app"
+
+collections:
+  - name: "about"
+    label: "O nama"
+    files:
+      - label: "Tekst"
+        name: "about_text"
+        file: "content/about.json"
+        fields:
+          - { label: "Tekst", name: "text", widget: "text" }
+
+  - name: "services"
+    label: "Usluge"
+    files:
+      - label: "Lista usluga"
+        name: "services_list"
+        file: "content/services.json"
+        fields:
+          - label: "Usluge"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Naziv usluge", name: "title", widget: "string" }
+              - { label: "Kratak opis (opciono)", name: "desc", widget: "string", required: false }
+
+  - name: "contact"
+    label: "Kontakt"
+    files:
+      - label: "Kontakt podaci"
+        name: "contact_data"
+        file: "content/contact.json"
+        fields:
+          - { label: "Naziv brenda", name: "brandTitle", widget: "string" }
+          - { label: "Podnaslov (Hero)", name: "heroSubtitle", widget: "string" }
+          - { label: "Email (javno)", name: "publicEmail", widget: "string" }
+          - { label: "Email za formu", name: "formReceiverEmail", widget: "string" }
+          - { label: "Telefon", name: "phone", widget: "string" }
+          - { label: "Adresa", name: "address", widget: "string" }
