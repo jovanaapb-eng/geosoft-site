@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Geodetski biro Geosoft</title>
+  <meta name="description" content="Geodetski biro Geosoft — pouzdane i profesionalne geodetske usluge. Kontakt forma za upite."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Početna">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Geodetski biro Geosoft logo">
+      </a>
+
+      <nav class="nav">
+        <a href="#o-nama">O nama</a>
+        <a href="#usluge">Usluge</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 id="brandTitle">Geodetski biro Geosoft</h1>
+          <p id="heroSubtitle" class="lead">Pouzdane i precizne geodetske usluge sa više od 20 godina iskustva.</p>
+
+          <div class="hero__meta">
+            <div id="heroPhone"></div>
+            <div id="heroEmail"></div>
+          </div>
+
+          <a class="btn" href="#kontakt">Pošaljite upit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAMA -->
+    <section class="section" id="o-nama">
+      <div class="container">
+        <h2>O nama</h2>
+        <div id="aboutText" class="card card--pad"></div>
+      </div>
+    </section>
+
+    <!-- USLUGE -->
+    <section class="section" id="usluge">
+      <div class="container">
+        <h2>Usluge</h2>
+        <div id="servicesGrid" class="grid"></div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <h2>Kontakt</h2>
+
+        <div class="contact">
+          <div class="card card--pad">
+            <h3>Kontakt podaci</h3>
+            <p id="contactAddress"></p>
+            <p id="contactPhone"></p>
+            <p id="contactEmail"></p>
+          </div>
+
+          <div class="card card--pad">
+            <h3>Pošaljite upit</h3>
+
+            <!-- Netlify Forms -->
+            <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="kontakt" />
+              <p class="hidden">
+                <label>Ne popunjavaj: <input name="bot-field" /></label>
+              </p>
+
+              <label>
+                Ime i prezime
+                <input type="text" name="ime" required />
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" required />
+              </label>
+
+              <label>
+                Poruka
+                <textarea name="poruka" rows="6" required></textarea>
+              </label>
+
+              <button class="btn" type="submit">Pošalji upit</button>
+              <p class="small">Odgovor stiže na: <span id="formReceiver"></span></p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> Geodetski biro Geosoft</div>
+      <div class="footer__links">
+        <a href="#top">Na vrh</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
