@@ -1,0 +1,14 @@
+/
+  index.html
+  styles.css
+  script.js
+  _redirects
+  /assets
+    logo.jpg   (tvoj logo ovde)
+  /content
+    about.json
+    services.json
+    contact.json
+  /admin
+    index.html
+    config.yml
