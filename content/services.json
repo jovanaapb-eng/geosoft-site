@@ -1,8 +1,8 @@
 {
   "items": [
     { "title": "Snimanje i ucrtavanje objekata", "desc": "" },
-    { "title": "Snimanje i ucrtavanje posebnih instalacija", "desc": "" },
-    { "title": "Deobe i spajanje parcela", "desc": "" },
+    { "title": "Snimanje i ucrtavanje podzemnih i nadzemnih instalacija", "desc": "" },
+    { "title": "Deoba i spajanje parcela", "desc": "" },
     { "title": "Katastarsko-topografski planovi", "desc": "" },
     { "title": "Praćenje sleganja objekata", "desc": "" },
     { "title": "Obeležavanje granica parcele", "desc": "" },
