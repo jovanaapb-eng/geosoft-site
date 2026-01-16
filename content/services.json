@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "title": "Snimanje i ucrtavanje objekata", "desc": "" },
+    { "title": "Snimanje i ucrtavanje posebnih instalacija", "desc": "" },
+    { "title": "Deobe i spajanje parcela", "desc": "" },
+    { "title": "Katastarsko-topografski planovi", "desc": "" },
+    { "title": "Praćenje sleganja objekata", "desc": "" },
+    { "title": "Obeležavanje granica parcele", "desc": "" },
+    { "title": "Računanje kubature", "desc": "" },
+    { "title": "Ostale geodetske usluge", "desc": "" }
+  ]
+}
