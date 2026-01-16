@@ -5,7 +5,7 @@ backend:
 media_folder: "assets"
 public_folder: "/assets"
 
-site_url: "https://your-site.netlify.app"
+site_url: "https://bright-cocada-333c41.netlify.app/"
 
 collections:
   - name: "about"
